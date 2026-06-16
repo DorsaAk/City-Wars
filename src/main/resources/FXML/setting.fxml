@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="629.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SettingController">
+    <children>
+        <ImageView fitHeight="647.0" fitWidth="814.0" layoutY="-13.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/setting.jpg" />
+            </image>
+        </ImageView>
+        <Slider fx:id="musicSlider" layoutX="25.0" layoutY="134.0" minorTickCount="4" prefHeight="58.0" prefWidth="254.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-border-color: #f8fc08; -fx-border-width: 2;" value="50.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="102.0" text="MUSIC" textFill="#f8fc08">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="523.0" layoutY="102.0" text="SOUND EFFECTS" textFill="#2dfa0c">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Slider fx:id="seSlider" layoutX="527.0" layoutY="134.0" minorTickCount="4" prefHeight="58.0" prefWidth="254.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-border-color: #2dfa0c; -fx-border-width: 2;" value="50.0" />
+        <ChoiceBox fx:id="musicChoice" layoutX="25.0" layoutY="225.0" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: #f8fc08;" />
+        <ChoiceBox fx:id="seChoice" layoutX="534.0" layoutY="225.0" prefHeight="26.0" prefWidth="254.0" style="-fx-background-color: #2dfa0c;" />
+        <Label layoutX="22.0" layoutY="355.0" prefHeight="26.0" prefWidth="165.0" text="GAME THEME:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="0.14393939303629322">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.8845176696777344" green="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="179.0" layoutX="24.0" layoutY="403.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-width: 10;" width="203.0" />
+        <ImageView fx:id="theme1" fitHeight="166.0" fitWidth="183.0" layoutX="34.0" layoutY="409.0" onMouseClicked="#theme1" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/bg1.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="179.0" layoutX="217.0" layoutY="403.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-width: 10;" width="196.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="179.0" layoutX="401.0" layoutY="403.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-width: 10;" width="196.0" />
+        <ImageView fx:id="theme2" fitHeight="160.0" fitWidth="183.0" layoutX="225.0" layoutY="413.0" onMouseClicked="#theme2" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/bg2.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="theme3" fitHeight="160.0" fitWidth="175.0" layoutX="412.0" layoutY="412.0" onMouseClicked="#theme3" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/bg3.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="179.0" layoutX="586.0" layoutY="403.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-width: 10;" width="196.0" />
+        <ImageView fx:id="theme4" fitHeight="166.0" fitWidth="175.0" layoutX="597.0" layoutY="409.0" onMouseClicked="#theme4" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/bg4.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="theme1LABEL" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="457.0" onMouseClicked="#theme1" prefHeight="58.0" prefWidth="148.0" textFill="WHITE">
+            <font>
+                <Font name="Bell MT" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="theme2LABEL" alignment="CENTER" layoutX="241.0" layoutY="459.0" onMouseClicked="#theme2" prefHeight="58.0" prefWidth="148.0" textFill="WHITE" />
+        <Label fx:id="theme3LABEL" alignment="CENTER" layoutX="425.0" layoutY="457.0" onMouseClicked="#theme3" prefHeight="58.0" prefWidth="148.0" textFill="WHITE" />
+        <Label fx:id="theme4LABEL" alignment="CENTER" layoutX="610.0" layoutY="459.0" onMouseClicked="#theme4" prefHeight="58.0" prefWidth="148.0" textFill="WHITE">
+            <font>
+                <Font name="Bell MT" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="musicVolumeLabel" layoutX="255.0" layoutY="102.0" text="50" textFill="#f8fc08">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="seVolumeLabel" layoutX="760.0" layoutY="102.0" text="50" textFill="#2dfa0c">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="save" layoutX="703.0" layoutY="595.0" mnemonicParsing="false" onMouseClicked="#setOnSave" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #221f34; -fx-border-color: #cb63ab; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 2;" text="SAVE" textFill="#cdf9fd">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

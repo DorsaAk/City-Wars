@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CharacterController">
+   <children>
+      <ImageView fitHeight="549.0" fitWidth="987.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/shop.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="362.0" layoutY="39.0" text="Choose your character" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="incrementLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="472.0" prefHeight="29.0" prefWidth="351.0" text="lklk" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="AlphaLupex" fitHeight="304.0" fitWidth="224.0" layoutX="733.0" layoutY="120.0" onMouseClicked="#chooseAlphaLupex" onMouseEntered="#hoverAlphaLupex" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/Alpha Lupex.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="anfo" fitHeight="297.0" fitWidth="207.0" layoutX="493.0" layoutY="128.0" onMouseClicked="#chooseAnfo" onMouseEntered="#hoverAnfo" pickOnBounds="true">
+         <image>
+            <Image url="@../Media/ANFO.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heliocelon" fitHeight="314.0" fitWidth="215.0" layoutX="256.0" layoutY="119.0" onMouseClicked="#chooseHeliocelon" onMouseEntered="#hoverHeliocelon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/Helio Celon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tagpunks" fitHeight="304.0" fitWidth="221.0" layoutY="124.0" onMouseClicked="#chooseTagpunks" onMouseEntered="#hoverTagpunks" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/Tag Punks.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
