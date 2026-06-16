@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.bettingController">
+   <children>
+      <ImageView fitHeight="553.0" fitWidth="711.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/Betting.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="coinLabel1" alignment="CENTER" layoutX="31.0" layoutY="129.0" prefHeight="42.0" prefWidth="379.0" text="label" textFill="#eaff00">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Text1" alignment="CENTER" layoutX="510.0" layoutY="121.0" prefHeight="50.0" prefWidth="57.0" promptText="...">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="coinLabel2" alignment="CENTER" layoutX="31.0" layoutY="205.0" prefHeight="42.0" prefWidth="379.0" text="label" textFill="#eaff00">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Text2" alignment="CENTER" layoutX="510.0" layoutY="201.0" prefHeight="50.0" prefWidth="57.0" promptText="...">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="go" layoutX="316.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#letsGo" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: #221f34; -fx-border-color: #cb63ab; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 2;" text="LET'S GO!" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

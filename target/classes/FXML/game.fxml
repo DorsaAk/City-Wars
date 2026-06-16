@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gameController">
+    <children>
+        <ImageView fx:id="backgroundImageView" fitHeight="700.0" fitWidth="1000.0" layoutX="-160.0" layoutY="1.0" pickOnBounds = "true" preserveRatio="false" />
+        <ImageView fitHeight="239.0" fitWidth="803.0" layoutX="546.0" layoutY="639.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/deck.png" />
+            </image>
+        </ImageView>
+        <GridPane fx:id="Deck1" layoutX="634.0" layoutY="684.0" prefHeight="146.0" prefWidth="636.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <ImageView fitHeight="230.0" fitWidth="761.0" layoutX="258.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/deck.png" />
+            </image>
+        </ImageView>
+        <GridPane fx:id="Deck2" layoutX="324.0" layoutY="36.0" prefHeight="146.0" prefWidth="636.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="157.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <Label fx:id="infoLabel" alignment="CENTER" layoutX="1180.0" layoutY="38.0" prefHeight="115.0" prefWidth="321.0" textFill="#fcf805" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="player2" fitHeight="146.0" fitWidth="163.0" layoutX="115.0" layoutY="23.0" pickOnBounds="true" preserveRatio="false" />
+        <ImageView fx:id="player1" fitHeight="153.0" fitWidth="163.0" layoutX="1341.0" layoutY="658.0" pickOnBounds="true" preserveRatio="false" />
+        <ImageView fitHeight="115.0" fitWidth="115.0" layoutX="-11.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/heart.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="108.0" fitWidth="133.0" layoutX="1503.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/heart.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="HP2" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="23.0" prefHeight="27.0" prefWidth="71.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+            </font></Label>
+        <Label fx:id="HP1" alignment="CENTER" contentDisplay="CENTER" layoutX="1455.0" layoutY="891.0" prefHeight="27.0" prefWidth="71.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+            </font></Label>
+        <GridPane fx:id="BoardGridPane" alignment="CENTER" gridLinesVisible="true" layoutX="74.0" layoutY="230.0" prefHeight="360.0" prefWidth="1491.0" style="-fx-border-width: 5;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="8.0" prefWidth="75.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label fx:id="STR0" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font></Label>
+                        <Label fx:id="LABEL0" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG0" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font></Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label fx:id="STR1" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL1" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG1" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                    <children>
+                        <Label fx:id="STR2" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL2" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG2" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                    <children>
+                        <Label fx:id="STR3" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL3" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG3" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
+                    <children>
+                        <Label fx:id="STR4" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL4" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG4" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="410.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5">
+                    <children>
+                        <Label fx:id="STR5" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL5" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG5" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="510.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6">
+                    <children>
+                        <Label fx:id="STR6" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL6" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG6" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="610.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7">
+                    <children>
+                        <Label fx:id="STR7" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL7" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG7" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="709.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8">
+                    <children>
+                        <Label fx:id="STR8" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL8" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG8" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="808.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="9">
+                    <children>
+                        <Label fx:id="STR9" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL9" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG9" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="808.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="10">
+                    <children>
+                        <Label fx:id="STR10" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL10" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG10" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="808.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="11">
+                    <children>
+                        <Label fx:id="STR11" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL11" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG11" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="808.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="12">
+                    <children>
+                        <Label fx:id="STR12" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL12" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG12" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="808.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="13">
+                    <children>
+                        <Label fx:id="STR13" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL13" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG13" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="808.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="14">
+                    <children>
+                        <Label fx:id="STR14" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="LABEL14" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="DMG14" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str0" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label0" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg0" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str1" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg1" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str2" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg2" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str3" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label3" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg3" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str4" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label4" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg4" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str5" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label5" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg5" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str6" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label6" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg6" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str7" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label7" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg7" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str8" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label8" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg8" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str9" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label9" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg9" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str10" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label10" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg10" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str11" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label11" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg11" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="12" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str12" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label12" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg12" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="13" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str13" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label13" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg13" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="14" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="str14" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label14" alignment="CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="100.0" />
+                        <Label fx:id="dmg14" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="100.0" textFill="#fcf805">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+        <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="-1.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/dmgIcon.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="Damage2" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="83.0" prefHeight="27.0" prefWidth="71.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="Damage1" alignment="CENTER" contentDisplay="CENTER" layoutX="1455.0" layoutY="825.0" prefHeight="27.0" prefWidth="71.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="1510.0" layoutY="791.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/dmgIcon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="70.0" fitWidth="108.0" layoutX="12.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/roundsIcon.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="rounds2" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="156.0" prefHeight="27.0" prefWidth="71.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="1518.0" layoutY="735.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/roundsIcon.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="rounds1" alignment="CENTER" contentDisplay="CENTER" layoutX="1447.0" layoutY="769.0" prefHeight="27.0" prefWidth="71.0">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+            </font>
+        </Label>
+        <Circle fx:id="circle" fill="DODGERBLUE" layoutX="94.0" layoutY="612.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+        <ProgressBar fx:id="progressBar" layoutX="148.0" layoutY="775.0" prefHeight="32.0" prefWidth="261.0" progress="0.0" />
+        <Label fx:id="progressLabel" layoutX="235.0" layoutY="723.0" text="progress">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font></Label>
+        <Label fx:id="result" layoutX="257.0" layoutY="830.0" text="result">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+            </font></Label>
+    </children>
+</AnchorPane>
