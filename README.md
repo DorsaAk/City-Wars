@@ -5,7 +5,7 @@
 
 # **Tokyo City Wars Replication**
 ## **Overview**
-**Tokyo City Wars Replication** is a Java-based card game project inspired by the popular game [City Wars: Tokyo Reign](https://store.steampowered.com/app/1689090/CITY_WARS_TOKYO_REIGN/). 
+**Tokyo City Wars Replication** is a Java-based card game project I did in spring 2024, inspired by the popular game [City Wars: Tokyo Reign](https://store.steampowered.com/app/1689090/CITY_WARS_TOKYO_REIGN/). 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/20acda5a-62c5-4ebf-8808-8f0272b6a230"
        alt="home page"
