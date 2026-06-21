@@ -59,3 +59,16 @@ This project was developed as a two-person course project to demonstrate mastery
 | **JavaFX** | Graphical user interface |
 | **Scene Builder** | UI layout design |
 | **SQL** | Database management for accounts and history |
+
+## 👥 Contributors
+
+### Dorsa Akbari
+
+* Email:
+
+### Amitis Mirabedini
+
+* Email: [mirabediniamitis@gmail.com](mailto:mirabediniamitis@gmail.com)
+
+This project was developed collaboratively by Dorsa Akbari Amitis Mirabedini as a two-person Object-Oriented Programming course project.
+
